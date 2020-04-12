@@ -1,8 +1,15 @@
 
-const getUsersData =  require("./getUsersData");
-const putUsersData =  require("./putUsersData");
-const deleteUsersData =  require("./deleteUsersData");
+const getUsersData =  require("./functions/getUsersData");
+const putUsersData =  require("./functions/putUsersData");
+const deleteUsersData =  require("./functions/deleteUsersData");
 
 
+const batchGetUsersData =  require("./functions/batchGetUsersData");
+const queryUsersData =  require("./functions/queryUsersData");
 
-getUsersData.handler("", "");
+const scanUsersData =  require("./functions/scanUsersData");
+
+const transactGetUsersData =  require("./functions/transactGetUsersData");
+
+
+transactGetUsersData.handler("", "");
