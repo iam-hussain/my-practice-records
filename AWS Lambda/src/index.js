@@ -4,4 +4,5 @@ const putUsersData =  require("./putUsersData");
 const deleteUsersData =  require("./deleteUsersData");
 
 
-putUsersData.handler("", "");
+
+getUsersData.handler("", "");
