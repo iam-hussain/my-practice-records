@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    
+  <div class="card mb-3" style="width: 49%;">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-auto">
+        <img
+          class="mx-auto d-block"
+          style="
+            width: auto;
+            height: auto;
+            max-width: 100px;
+            max-height: 100px;
+          "
+          src="{{ saved.original_product.picture }}"
+        />
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a
+              href="{% url 'finder:detail' saved.original_product.id %}"
+              class="aaccount"
+              >{{ saved.original_product.real_name }}/ {{
+              saved.original_product.real_brand }}</a
+            >
+          </h5>
+          <img
+            src="/static/finder/img/nutriscore-{{ saved.original_product.nutrition_grade}}.svg"
+            style="width: 70px;"
+          /><br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3" style="width: 49%;">
+    <div class="row no-gutters">
+      <div class="col-md-2 my-auto">
+        <img
+          class="mx-auto d-block"
+          style="
+            width: auto;
+            height: auto;
+            max-width: 100px;
+            max-height: 100px;
+          "
+          src="{{ saved.sub_product.picture }}"
+        />
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a
+              href="{% url 'finder:detail' saved.sub_product.id %}"
+              class="aaccount"
+              >{{ saved.sub_product.real_name}}/ {{ saved.sub_product.real_brand
+              }}</a
+            >
+          </h5>
+          <img
+            src="/static/finder/img/nutriscore-{{ saved.sub_product.nutrition_grade}}.svg"
+            style="width: 70px;"
+          /><br />
+        </div>
+      </div>
+      <div class="col-md-1 my-auto mx-auto">
+        <button type="button" class="btn substitut" value="{{ saved.id }}">
+          {% csrf_token %}<i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html><div class="row d-flex justify-content-between">
+    

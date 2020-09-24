@@ -1,0 +1,55 @@
+product{
+    title:
+    discribe:
+    fuel gem
+    bid gem
+    reserve gem
+    mrp
+    start date
+    countdown
+    lunchIntervel
+    maxBid
+    attchment [{
+        primary
+        path
+        name
+        caption
+    }]
+    bidder : { 
+        uId
+        fuelSpent
+        advGain
+        biddingSpent
+        totalSpent
+        noOfBid
+        lastBid
+    }
+}
+
+accLog{
+    type: BG/SG/bid
+    newGamBal
+    debit
+    credit
+    amountDebit
+    amountCredit
+}
+
+bidHist{
+    uId
+    pID
+    type: f/b
+    spent
+    new bal
+}
+
+user{
+    id
+    username
+    email
+    phone
+    address
+    gem bal
+    bonus gem
+}
+
